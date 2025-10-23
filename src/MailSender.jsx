@@ -15,10 +15,10 @@ const MailSender = ({ patente, caso, email }) => {
 
     emailjs
       .send(
-        'service_zn6ed7d',    // <-- Reemplaza esto
-        'template_tootoo',   // <-- Reemplaza esto
+        'service_zn6ed7d',    // <-- ID servicio 
+        'template_tootoo',   // <-- ID template
         templateParams,
-        'MDpxkQyNjiltWlUo-'     // <-- Reemplaza esto
+        'MDpxkQyNjiltWlUo-'     // <-- Account -> Public key
       )
       .then(
         (response) => {
